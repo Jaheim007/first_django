@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Hello Pizza</title>
+    </head>
+    <body>
+        <h1>Les Pizzas</h1>
+        <ul>
+            <!-- <li>Pizza 1</li>
+            <li>Pizza 1</li>
+            <li>Pizza 1</li>
+            <li>Pizza 1</li> -->
+
+            {% for pizza in pizzas %}
+                <li> {{ pizza.nom }} </li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
