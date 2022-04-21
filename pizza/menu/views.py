@@ -9,3 +9,10 @@ def index(request):
     # return HttpResponse("Les Pizza: " + pizza_names_str) 
     pizzas = Pizza.objects.all() 
     return render(request, 'menu/index.html', locals())
+
+def too(request):      
+    return HttpResponse("Hello World")
+
+
+def main(requests):    
+    return render(requests, 'menu/main.html', locals() )

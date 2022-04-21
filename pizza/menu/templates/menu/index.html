@@ -1,18 +1,24 @@
+{% load static %}
 <html>
+    
     <head>
+        <link rel="stylesheet" href="{% static 'menu/style.css' %}">
         <title>Hello Pizza</title>
     </head>
     <body>
-        <h1>Les Pizzas</h1>
-        <ul>
-            <!-- <li>Pizza 1</li>
-            <li>Pizza 1</li>
-            <li>Pizza 1</li>
-            <li>Pizza 1</li> -->
-
-            {% for pizza in pizzas %}
-                <li> {{ pizza.nom }} </li>
-            {% endfor %}
-        </ul>
+        <img id ="logo" src= {% static 'menu/images/small_logo.png' %} alt="logo">
+        
+        <div class="title">
+            <h1 id="header">Les Pizzas</h1>
+        </div>
+        
+        <div class="pizza_items">
+            <ul>  
+                {% for pizza in pizzas %}
+                    <div class="menu_items"><li> {{ pizza.nom }} : <span id="prix">{{ pizza.price | floatformat:2 }} £</span> <br> <span class="ind">{{pizza.ingerdients}}</span></li></div>
+                {% endfor %}
+            </ul>
+        </div>
+        
     </body>
 </html>

@@ -1,0 +1,50 @@
+body{
+    background: url("images/pizza\ background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.title{
+    /* display: inline;
+    background-color: #FFA62F;
+    color: #fff; */
+    margin-left: 35px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#header{
+    display: inline;
+    background-color: #FFA62F;
+    color: #fff;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+#logo{
+    margin-top: 25px;
+    margin-left: 35px;
+}
+
+.pizza_items{
+    margin-left: 15px;
+}
+
+.menu_items{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    color: #fff;
+}
+
+#prix{
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.ind{
+    color: green;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+}
